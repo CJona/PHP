@@ -3,7 +3,7 @@
 function checkCombination($name, $password){
     $email = array('piet@worldonline.nl', 'klaas@carpets.nl', 'truushendriks@wegweg.nl');
     $wachtwoord = array('doetje123', 'snoepje777', 'arkiearkie201');
-    $samen;
+//    $samen;
 
     if((($name == $email[0]) && ($password == $wachtwoord[0]))
         || (($name == $email[1]) && ($password == $wachtwoord[1]))

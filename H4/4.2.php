@@ -10,7 +10,7 @@
 </head>
 <body>
 <?php
-    if (delen(9)){
+    if (delen(6)){
         echo "dit getal is deelbaar door 3"."<br><br>";
     } else {
         echo "dit getal is niet deelbaar door 3". "<br><br>";

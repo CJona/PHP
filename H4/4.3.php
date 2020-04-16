@@ -13,7 +13,7 @@
 function keerom($a){
     return strrev($a);
 }
-echo keerom("Hello dit was best pittig")."<br>"
+echo keerom("Dit was best moeilijk")."<br>"
 
 ?>
 <a href="Opdrachten.php">Opdrachten Pagina</a><br>

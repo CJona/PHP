@@ -12,11 +12,11 @@
 </head>
 <body>
 <?php
-for ($i = 0; $i <= 77; $i++) {
+for ($i = 0; $i <= 10; $i++) {
     for ($j = 0; $j < $i; $j++) {
-        echo "*";
+        echo "a";
     }
-    echo "*<br>";
+    echo "k<br>";
 }
 ?>
 <a href="Opdrachten.php">Opdrachten Pagina</a><br>

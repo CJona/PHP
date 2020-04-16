@@ -9,16 +9,16 @@ $gebruikers = array(
 );
 
 print_r($_SESSION);
-if (isset($_POST['knop'])
+if (isset($_POST['button'])
     && isset($gebruikers[$_POST["email"]])
     && $gebruikers[$_POST["email"]] ["wachtwoord"] == $_POST['wachtwoord']) {
     $_SESSION["gebruiker"] = array("naam" => $_POST["email"],
         "wachtwoord" => $gebruikers[$_POST["email"]]["wachtwoord"],
         "rol" => $gebruikers[$_POST["email"]]["rol"]);
 
-    $message = "<h2>Welkom " . $_SESSION["gebruiker"]["naam"]." op de website met de rol "
-        .$_SESSION["gebruiker"]["rol"]."</h2>";
-    echo $message;
+    $output = "<h1>Welkom " . $_SESSION["gebruiker"]["naam"]." op de website met de rol "
+        .$_SESSION["gebruiker"]["rol"]."</h1>";
+    echo $output;
     echo "<p></p><a href=\"Admin.php\">Beveiligde pagina</a></p>";
     echo "<p><a href=\"Login.html\">uitloggen</a></p>";
 } else {

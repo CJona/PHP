@@ -24,7 +24,7 @@
 <body>
 <table>
 <?php
-$clubs["De spartelkuikens"] = "25";
+$clubs ["De spartelkuikens"] = "25";
 $clubs["De waterbuffels"] = "32";
 $clubs["Plonsmderin"] = "11";
 $clubs["Bommetje"] = "23";
@@ -41,7 +41,7 @@ foreach ($clubs as $clubnaam => $zwemmers) {
     echo '<td class="plaatjes">';
     $plaatsjes = floor($zwemmers / 5);
     for ($i = 0; $i <= $plaatsjes; $i++) {
-        echo '<img class="Foto" src="../img/zwem-pictogram.jpg" alt="plaatje">';
+        echo '<img class="Foto" src="../H5/img/zwem-pictogram.jpg" alt="plaatje">';
     }
     echo '</td>';
     echo '</tr>';

@@ -10,7 +10,7 @@
     </head>
     <body>
     <?php
-    echo "graden in fahrenheit: ".fahrenheit(5). "<br>";
+    echo "graden in fahrenheit: ".fahrenheit(20). "<br>";
 
     function fahrenheit($a){
         return $a * 1.8 + 32;
