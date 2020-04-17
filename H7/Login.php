@@ -8,14 +8,14 @@ $gebruikers = array(
     "truushendriks@wegweg.nl" => array("wachtwoord" => "arkiearkie12", "rol" => "administrator")
 );
 
-print_r($_SESSION);
+//print_r($_SESSION);
 if (isset($_POST['button'])
     && isset($gebruikers[$_POST["email"]])
     && $gebruikers[$_POST["email"]] ["wachtwoord"] == $_POST['wachtwoord']) {
     $_SESSION["gebruiker"] = array("naam" => $_POST["email"],
         "wachtwoord" => $gebruikers[$_POST["email"]]["wachtwoord"],
         "rol" => $gebruikers[$_POST["email"]]["rol"]);
-
+    // outout is message
     $output = "<h1>Welkom " . $_SESSION["gebruiker"]["naam"]." op de website met de rol "
         .$_SESSION["gebruiker"]["rol"]."</h1>";
     echo $output;

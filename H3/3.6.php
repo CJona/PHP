@@ -5,15 +5,13 @@
 <head>
     <title>Zwemclubs</title>
     <style>
-        body{
-        }
+       
         table, tr, td {
             border: solid black 1px;
             border-collapse: collapse;
-        }
-        td {
             padding: 10px;
         }
+
         img {
             height: 30px;
             width: 30px;
@@ -24,10 +22,7 @@
 <body>
 <table>
 <?php
-$clubs ["De spartelkuikens"] = "25";
-$clubs["De waterbuffels"] = "32";
-$clubs["Plonsmderin"] = "11";
-$clubs["Bommetje"] = "23";
+$clubs = array("De Spartelkuikens" => "25", "De Waterbuffels" => "32", "Plonsmderin" => "11", "Bommetje" => "23");
 
 foreach ($clubs as $clubnaam => $zwemmers) {
     echo '<tr>';
